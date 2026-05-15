@@ -11,15 +11,15 @@
         <title>SquareUp</title>
     </head>
     <body class="bg-[#1A1A1A]">
-        <header class="flex h-fit w-full px-20 py-5 bg-[#262626] justify-between 
+        <header class="flex h-fit w-full items-center px-20 py-5 bg-[#262626] justify-between 
             border-b border-[#262626]">
             <!-- logo -->
-            <div class="flex rounded-xl h-[40px] w-[118.48px] text-white">
-                <img src="./assets/Logo.png" alt="SquareUp Logo" class="w-[60.28px] h-15 border-radius-[9.38px]">
-                <h2 class="top-5 left-[70.57px] w-[107.15px] h-[19.05px]">SquareUp</h2>
+            <div class="flex flex-row gap-2 items-center h-10 w-[118.48px] text-white">
+                <img src="./assets/Logo.png" alt="SquareUp Logo" class="w-[40.19px] h-[40px] border-radius-[9.38px]">
+                <img src="./assets/SquareUp.svg" alt="" class="h-[12.7px]">
             </div>   
             <!-- Navigation -->
-            <nav class="flex justify-center w-105.25 h-11.25 gap-6 text-white">
+            <nav class="flex justify-center w-fit h-fit gap-6 text-white font-[barlow]">
                 <a href="">Home</a>
                 <a href="">Services</a>
                 <a href="">Work</a>
@@ -28,370 +28,638 @@
                 <a href="">Careers</a>
             </nav>
             <!-- CTA -->
-            <button class="bg-[#9EFF00] w-26 h-11.25 rounded-md">Contact Us</button>
+            <button class="bg-[#9EFF00] w-fit h-fit rounded-md px-[18px] py-[12px]">Contact Us</button>
         </header>
 
         <!-- Hero Section -->
-        <section class="flex flex-col w-7xl h-fit pt-28">
-            <div class="flex flex-col h-fit w-full relative  gap-10 items-center">
-                <div class="gap-7.5 h-fit pt-28  flex flex-col items-center">
-                    <h2 class="font-semibold text-5xl font-[Barlow] leading-none tracking-normal text-center text-white z-10">A Digital Product Studio that will Work</h2>
-                    <div class="flex w-fit h-fit px-7.5 py-4.5 gap-1.5 rounded-lg border border-[#262626]">
-                        <p class="text-[18px]">For</p>
-                        <span class="class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md"><p>Startups</p>,</span>
-                        <span class="class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md"><p>Enterprise leaders</p></span>
-                        <p>,</p>
-                        <span class="class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md"><p>Media & Publishers</p></span>
-                        <p>and</p>
-                        <span class="class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md"><p>Social Good</p></span>
+        <section class="flex flex-col pt-28 h-[691px] w-[1280px] border-x-[1px] border-b-[1px] border-[#262626] mx-auto relative">
+            <div class="flex flex-col h-fit w-full relative  gap-10 items-center pt-10">
+                <div class="gap-7.5 h-fit flex flex-col items-center"> 
+                    <h2 class="font-semibold text-[48px] font-[Barlow] leading-none tracking-normal text-center text-white z-10">A Digital Product Studio <br> that will Work</h2>
+                    <div class="flex w-fit h-fit px-6 py-4.5 gap-1.5 rounded-lg border border-[#262626] items-center font-[barlow]">
+                        <p class="text-[18px] text-[#98989A]">For</p>
+                        <div class="flex bg-[#262626] rounded-[8px]"><p class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md text-white">Startups</p></div>
+                        <p class="text-[#98989A]">,</p>
+                        <div class="flex bg-[#262626] rounded-[8px]"><p class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md text-white">Enterprise leaders</p></div>
+                        <p class="text-[#98989A]">,</p>
+                        <div class="flex bg-[#262626] rounded-[8px]"><p class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md text-white">Media & Publishers</p></div>
+                        <p class="text-[#98989A]">and</p>
+                        <div class="flex bg-[#262626] rounded-[8px]"><p class="w-fit h-fit px-[10px] py-[8px] gap-[10px] rounded-md align-middle text-white">Social Good</p></div>
                     </div>
                 </div>
-                <div class="button-container flex gap-3.25 h-11.25">
-                        <button class="w-fit h-fit rounded-lg border py-3.5 px-5 border-[#333333]">Our Works</button>
+                <div class="button-container flex gap-3.25 h-fit">
+                        <button class="w-fit h-fit rounded-lg border py-3.5 px-5 border-[#333333] bg-[#24242433] text-white">Our Works</button>
                         <button class="w-fit h-fit rounded-lg py-3.5 px-5 bg-[#9EFF00]">Contact Us</button>
                 </div>
             </div>  
-            <img src="./assets/Abstract Design.png" alt="Abstract Design" class="absolute inset-0 w-full h-full object-cover">  
+            <div class="rounded-full absolute z-10 text-[14px] font-[barlow] font-medium text-white bg-[#1A1A1A] -bottom-7 left-[43%] border-[1px] px-[14px] py-[14px] border-[#333333]">Trusted by 250+ companies</div>
+            <img src="./assets/abstract-design.png" alt="Abstract Design" class="absolute bottom-0 w-full h-full object-cover">  
         </section>
+
+        <!-- Trusted by -->
+         <section class="flex flex-row w-[1280px] pt-6 justify-center mx-auto gap-5 border-l border-r border-b border-[#262626] h-fit">
+            <article class="px-5 py-10 gap-[30px]"><img src="./assets/zapier.png" alt="Zapier Logo"></article>
+            <article class="px-5 py-10 gap-[30px]"><img src="./assets/spotify.png" alt="Spotify Logo"></article>
+            <article class="px-5 py-10 gap-[30px]"><img src="./assets/zoom.png" alt=""></article>
+            <article class="px-5 py-10 gap-[30px]"><img src="./assets/slack.png" alt=""></article>
+            <article class="px-5 py-10 gap-[30px] mt-1.5"><img src="./assets/amazon.svg" alt=""></article>   
+            <article class="px-5 py-10 gap-[30px]"><img src="./assets/adobe.png" alt=""></article>
+         </section>
 
         <!-- Services section -->
-        <section class="">
-            <div class="h-fit mix-blend-overlay py-[100px] px-[250px] gap-[10px]">
-                <h3>Our Services</h3>
-                <p>Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
-                <!-- <img src="./assets/serviesimg.png" class=""> -->
+        <section class="relative w-[1280px] mx-auto border border-[#262626]">
+
+            <!-- Hero banner -->
+            <div class="relative flex flex-col justify-center text-center text-white py-[100px] px-[250px] gap-[10px] grayscale bg-cover bg-center bg-[url('/assets/servicesimg.png')] overflow-hidden">
+
+                <!-- Squares overlay -->
+                <div class="absolute inset-0 bg-[url('/assets/squares.png')] bg-repeat opacity-20 mix-blend-overlay pointer-events-none z-[1]"></div>
+                
+                <!-- Content -->
+                <div class="relative z-[2] flex flex-col items-center gap-[10px]">
+                    <h3 class="text-[38px] font-barlow font-bold text-white tracking-tight">
+                        Our Services
+                    </h3>
+
+                    <p class="text-[16px] leading-[24px] tracking-[-0.006em] text-[#d1d5db] max-w-[520px]">
+                        Transform your brand with our innovative digital solutions that captivate and engage your audience.
+                    </p>
+                </div>
             </div>
-            <div class="h-fit w-full flex border-t border-[#262626] justify-between">
-                <article class="p-10 ">
-                    <div>
-                        <span></span>
-                        <div class="h-fit flex flex-col gap-3.5">
-                            <h4>Design</h4>
-                            <p>At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.</p>
+
+            <!-- Service cards -->
+            <div class="h-fit w-full flex border-t border-[#262626]">
+
+                <!-- Design -->
+                <article class="flex-1 p-10 flex flex-col border-r border-[#262626]">
+                    <div class="flex flex-col gap-2.5">
+                        <span class="w-[48px] h-[48px]">
+                            <img src="./assets/Cicon1.svg" alt="Design icon" class="w-full h-full object-contain" />
+                        </span>
+                        <div class="h-fit flex flex-col gap-3.5 text-white mt-[10px]">
+                            <h4 class="font-syne text-[20px] font-semibold">Design</h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.
+                            </p>
                         </div>
                     </div>
-                    <button class="h-fit rounded-md py-3.5 px-4">Learn More</button>
+                    <button class="mt-auto h-fit rounded-[6px] py-3.5 px-4 bg-[#262626] text-[13px] text-white hover:bg-[#2e2e2e] transition-colors mt-12 self-start">
+                        Learn More
+                    </button>
                 </article>
-                <article class="p-10">
-                    <div class="flex flex-col justify-center">
-                        <span></span>
-                        <div class="h-fit flex flex-col gap-3.5">
-                            <h4>Engineering</h4>
-                            <p>Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.</p>
+
+                <!-- Engineering -->
+                <article class="flex-1 p-10 flex flex-col border-r border-[#262626]">
+                    <div class="flex flex-col gap-2.5">
+                        <span class="w-[48px] h-[48px]">
+                            <img src="./assets/Subtract.svg" alt="Engineering icon" class="w-full h-full object-contain" />
+                        </span>
+                        <div class="h-fit flex flex-col gap-3.5 text-white mt-[10px]">
+                            <h4 class="font-syne text-[20px] font-semibold">Engineering</h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.
+                            </p>
                         </div>
                     </div>
-                    <button class="h-fit rounded-md py-3.5 px-4 ">Learn More</button>
+                    <button class="mt-auto h-fit rounded-[6px] py-3.5 px-4 bg-[#262626] text-[13px] text-white hover:bg-[#2e2e2e] transition-colors mt-12 self-start">
+                        Learn More
+                    </button>
                 </article>
-                <article class="p-10">
-                    <div>
-                        <span></span>
-                        <div class="h-fit flex flex-col gap-3.5">
-                            <h4>Project Management</h4>
-                            <p>Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.</p>
+
+                <!-- Project Management -->
+                <article class="flex-1 p-10 flex flex-col">
+                    <div class="flex flex-col gap-2.5">
+                        <span class="w-[48px] h-[48px]">
+                            <img src="./assets/cicon2.svg" alt="Project management icon" class="w-full h-full object-contain" />
+                        </span>
+                        <div class="h-fit flex flex-col gap-3.5 text-white mt-[10px]">
+                            <h4 class="font-syne text-[20px] font-semibold">Project Management</h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.
+                            </p>
                         </div>
                     </div>
-                    <button class="h-fit rounded-md py-3.5 px-4">Learn More</button>
+                    <button class="mt-auto h-fit rounded-[6px] py-3.5 px-4 bg-[#262626] text-[13px] text-white hover:bg-[#2e2e2e] transition-colors mt-12 self-start">
+                        Learn More
+                    </button>
                 </article>
+
             </div>
         </section>
 
-        <!--Why us -->
-        <section class="flex flex-col border border-[#262626]">
-            <div>
-                <h3>Why Choose SquareUp?</h3>
-                <p>Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.</p>
-            </div>
-            <div class="h-fit">
-                <div class="h-fit flex flex-row ">
-                    <article>
-                        <div class="p-[60px] flex flex-col gap-7.5">
-                            <span></span>
-                            <h5>Expertise</h5>
-                        </div>
-                        <p>Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
-                    </article>
-                    <article>
-                        <div class="p-[60px] flex flex-col gap-7.5">
-                            <span></span>
-                            <h5>Client-Centric Approach</h5>
-                        </div>
-                        <p>We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success.</p>
-                    </article>
+        <!-- Why us -->
+        <section class="w-[1280px] flex flex-col border border-[#262626] mx-auto">
+
+            <!-- Header -->
+            <div class="relative py-[60px] px-[40px] text-center bg-[url('/whyImg.jpg')] bg-cover bg-center overflow-hidden">
+                
+                <!-- Dark overlay -->
+                <div class="absolute inset-0 bg-[#0D1B39]/55 z-[0]"></div>
+
+                <!-- Squares pattern -->
+                <div class="absolute inset-0 bg-[url('/assets/squares.png')] bg-repeat opacity-20 pointer-events-none z-[1]"></div>
+
+                <!-- Content -->
+                <div class="relative z-[2]">
+                    <h3 class="font-syne text-[32px] font-bold text-white tracking-tight mb-[12px]">
+                        Why Choose SquareUp?
+                    </h3>
+
+                    <p class="text-[14px] text-[#d1d5db] leading-[1.7] max-w-[480px] mx-auto">
+                        Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.
+                    </p>
                 </div>
-                <hr>
-                <div class="flex flex-row ">
-                    <article>
-                        <div >
-                            <span></span>
-                            <h5>Results-Driven Solutions</h5>
+            </div>
+
+            <!-- Cards grid -->
+            <div class="h-fit border-t border-[#262626]">
+
+                <!-- Row 1 -->
+                <div class="h-fit flex flex-row">
+
+                    <article class="flex-1 border-r border-[#262626] flex flex-col">
+                        <div class="p-[60px] pb-[24px] items-center flex gap-[20px]">
+                            <span class="w-[40px] h-[40px] flex items-center justify-center">
+                                <img src="./assets/expIcon.svg" alt="">
+                            </span>
+                            <h5 class="font-syne text-[17px] font-semibold text-white">Expertise</h5>
                         </div>
-                        <p>
+                        <p class="px-[60px] pb-[60px] text-[13px] text-[#E6E6E6] -leading-[0.6]">
+                            Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.
+                        </p>
+                    </article>
+
+                    <article class="flex-1 flex flex-col">
+                        <div class="p-[60px] pb-[24px] items-center flex gap-[20px]">
+                            <span class="w-[40px] h-[40px] flex items-center justify-center">
+                                <img src="./assets/Clicon.svg" alt="">
+                            </span>
+                            <h5 class="font-syne text-[17px] font-semibold text-white">Client-Centric Approach</h5>
+                        </div>
+                        <p class="px-[60px] pb-[60px] text-[13px] text-[#E6E6E6] leading-[1.7]">
+                            We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success.
+                        </p>
+                    </article>
+
+                </div>
+
+                <hr class="border-none h-px bg-[#262626]" />
+
+                <!-- Row 2 -->
+                <div class="flex flex-row">
+
+                    <article class="flex-1 border-r border-[#262626] flex flex-col">
+                        <div class="p-[60px] pb-[24px] items-center flex gap-[20px]">
+                            <span class="w-[40px] h-[40px] flex items-center justify-center">
+                                <img src="./assets/reicon.svg" alt="">
+                            </span>
+                            <h5 class="font-syne text-[17px] font-semibold text-white">Results-Driven Solutions</h5>
+                        </div>
+                        <p class="px-[60px] pb-[60px] text-[13px] text-[#E6E6E6] leading-[1.7]">
                             Our primary focus is on delivering results. We combine creativity and technical expertise to create digital products that drive business growth, enhance user experiences, and provide a competitive advantage.
                         </p>
                     </article>
-                    <article>
-                        <div>
-                            <span></span>
-                            <h5>Collaborative Partnership</h5>
+
+                    <article class="flex-1 flex flex-col">
+                        <div class="p-[60px] pb-[24px] items-center flex gap-[20px]">
+                            <span class="w-[40px] h-[40px] flex items-center justify-center">
+                                <img src="./assets/collicon.svg" alt="">
+                            </span>
+                            <h5 class="font-syne text-[17px] font-semibold text-white">Collaborative Partnership</h5>
                         </div>
-                        <p>
+                        <p class="px-[60px] pb-[60px] text-[13px] text-[#E6E6E6] -leading-[0.6]">
                             We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive.
                         </p>
                     </article>
+
                 </div>
+
             </div>
         </section>
 
-        <!-- Testimonials  -->
-        <section>
-            <div>
-                <h3>What our Clients say About us</h3>
-                <p>At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us</p>
+        <!-- Testimonials -->
+        <section class="w-[1280px] mx-auto border-x border-[#262626]">
+
+            <!-- Header -->
+            <div class="relative  flex flex-col items-center justify-center text-center overflow-hidden rounded-[20px] px-[40px] py-[50px] bg-[url('/testimg.png')] bg-cover bg-center">
+                
+                <!-- Squares pattern -->
+                <div class="absolute inset-0 bg-[url('/assets/squares.png')] bg-repeat opacity-20 pointer-events-none z-[1]"></div>
+
+                <!-- Content -->
+                <div class="relative">
+                    <h3 class="font-syne text-[32px] font-bold text-white leading-tight tracking-tight mb-[16px]">
+                        What our Clients say About us
+                    </h3>
+
+                    <p class="text-[14px] text-[#d1d5db] max-w-[700px] leading-[1.7]">
+                        At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us
+                    </p>
+                </div>
             </div>
-            <div>
-                <hr>
-                <div>
-                    <article>
-                        <div>
-                            <h4>SquareUp has been Instrumental in Transforming our Online Presence. </h4>
-                            <p>Their team's expertise in web development and design resulted in a visually stunning and user-friendly e-commerce platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+
+            <div class=''>
+
+                <!-- Row 1 -->
+                <hr class="border-none h-px bg-[#262626] mb-0" />
+                <div class="grid grid-cols-2">
+
+                    <article class="border-r border-[#262626] p-[40px] flex flex-col justify-between gap-[40px]">
+                        <div class="flex flex-col gap-[16px]">
+                            <h4 class="font-syne text-[18px] font-semibold text-white leading-snug">
+                                SquareUp has been Instrumental in Transforming our Online Presence.
+                            </h4>
+                            <p class="text-[13px] text-[#555555] -leading-[0.6]">
+                                Their team's expertise in web development and design resulted in a visually stunning and user-friendly e-commerce platform. Our online sales have skyrocketed, and we couldn't be happier.
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <!-- profile -->
+                        <div class="flex items-center justify-between border border-[#262626] p-[14px] rounded-[6px] bg-[#242424]/20">
+                            <div class="flex items-center w-full gap-[12px]">
+                                <img src="./assets/johnSmith.jpg" alt="" class="h-[50px] w-[50px] rounded-md">
                                 <div>
-                                    <p>John Smith</p>
-                                    <p>CEO of Chic Boutique </p>
+                                    <p class="text-[13px] font-medium text-white">John Smith</p>
+                                    <p class="text-[12px] text-[#555555]">CEO of Chic Boutique</p>
                                 </div>
                             </div>
-                            <button>Open Website</button>
+                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                                Open Website
+                            </button>
                         </div>
                     </article>
-                    
-                    <article>
-                        <div>
-                            <h4>Working with SquareUp was a breeze.</h4>
-                            <p>They understood our vision for a mobile app that streamlined our food delivery service. The app they delivered exceeded our expectations, and our customers love the seamless ordering experience. SquareUp is a trusted partner we highly recommend.</p>
+
+                    <article class="p-[40px] flex flex-col justify-between gap-[40px]">
+                        <div class="flex flex-col gap-[16px]">
+                            <h4 class="font-syne text-[18px] font-semibold text-white leading-snug">
+                                Working with SquareUp was a breeze.
+                            </h4>
+                            <p class="text-[13px] text-[#555555] -leading-[0.6]">
+                                They understood our vision for a mobile app that streamlined our food delivery service. The app they delivered exceeded our expectations, and our customers love the seamless ordering experience. SquareUp is a trusted partner we highly recommend.
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <!-- profile -->
-                                 <div>
-                                    <h6>Sarah Johnson</h6>
-                                    <p>Founder of HungryBites.</p>
-                                 </div>
+                        <div class="flex items-center justify-between border border-[#262626] p-[14px] rounded-[6px] bg-[#242424]/20">
+                            <div class="flex items-center gap-[12px]">
+                                <img src="./assets/sarahj.jpg" alt="" class="h-[50px] w-[50px] rounded-md">
+                                <div>
+                                    <p class="text-[13px] font-medium text-white">Sarah Johnson</p>
+                                    <p class="text-[12px] text-[#555555]">Founder of HungryBites.</p>
+                                </div>
                             </div>
-                            <button>Open Website</button>
+                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                                Open Website
+                            </button>
                         </div>
                     </article>
+
                 </div>
-                <hr>
-                <div>
-                    <article>
-                        <div>
-                            <h4>SquareUp developed a comprehensive booking and reservation system for our event management company</h4>
-                            <p>Their attention to detail and commitment to delivering a user-friendly platform was evident throughout the project. The system has streamlined our operations and enhanced our clients' event experiences.</p>
+
+                <!-- Row 2 -->
+                <hr class="border-none h-px bg-[#262626]" />
+                <div class="grid grid-cols-2">
+
+                    <article class="border-r border-[#262626] p-[40px] flex flex-col justify-between gap-[40px]">
+                        <div class="flex flex-col gap-[16px]">
+                            <h4 class="font-syne text-[18px] font-semibold text-white leading-snug">
+                                SquareUp developed a comprehensive booking and reservation system for our event management company
+                            </h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                Their attention to detail and commitment to delivering a user-friendly platform was evident throughout the project. The system has streamlined our operations and enhanced our clients' event experiences.
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <!-- profile -->
-                                 <div>
-                                    <h6>Mark Thompson</h6>
-                                    <p>CEO of EventMasters</p>
-                                 </div>
+                        <div class="flex items-center justify-between border border-[#262626] p-[14px] rounded-[6px] bg-[#242424]/20">
+                            <div class="flex items-center gap-[12px]">
+                                <img src="./assets/markt.jpg" alt="" class="h-[50px] w-[50px] rounded-md">
+                                <div>
+                                    <p class="text-[13px] font-medium text-white">Mark Thompson</p>
+                                    <p class="text-[12px] text-[#555555]">CEO of EventMasters</p>
+                                </div>
                             </div>
-                            <button></button>
+                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                                Open Website
+                            </button>
                         </div>
                     </article>
-                    <article>
-                        <div>
-                            <h4>ProTech Solutions turned to SquareUp to automate our workflow</h4>
-                            <p>They delivered an exceptional custom software solution. The system has significantly increased our productivity and reduced manual errors. SquareUp's expertise and professionalism have made them a trusted technology partner.</p>
+
+                    <article class="p-[40px] flex flex-col justify-between gap-[40px]">
+                        <div class="flex flex-col gap-[16px]">
+                            <h4 class="font-syne text-[18px] font-semibold text-white leading-snug">
+                                ProTech Solutions turned to SquareUp to automate our workflow
+                            </h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                They delivered an exceptional custom software solution. The system has significantly increased our productivity and reduced manual errors. SquareUp's expertise and professionalism have made them a trusted technology partner.
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <!-- profile -->
-                                 <div>
-                                    <h6>Laura Adams</h6>
-                                    <p>CEO of ProTech Solutions.</p>
-                                 </div>
+                        <div class="flex items-center justify-between border border-[#262626] p-[14px] rounded-[6px] bg-[#242424]/20">
+                            <div class="flex items-center gap-[12px]">
+                                <img src="./assets/laura.jpg" alt="" class="h-[50px] w-[50px] rounded-md">
+                                <div>
+                                    <p class="text-[13px] font-medium text-white">Laura Adams</p>
+                                    <p class="text-[12px] text-[#555555]">CEO of ProTech Solutions.</p>
+                                </div>
                             </div>
-                            <button>Open Wensite</button>
+                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                                Open Website
+                            </button>
                         </div>
                     </article>
+
                 </div>
-                <hr>
-                <div>
-                    <article>
-                        <div>
-                            <h4>SquareUp designed and developed a captivating web portal for showcasing our real estate listings.</h4>
-                            <p>The platform is visually appealing and easy to navigate, allowing potential buyers to find their dream homes effortlessly. SquareUp's expertise in the real estate industry is unmatched.</p>
+
+                <!-- Row 3 -->
+                <hr class="border-none h-px bg-[#262626]" />
+                <div class="grid grid-cols-2">
+
+                    <article class="border-r border-[#262626] p-[40px] flex flex-col justify-between gap-[40px]">
+                        <div class="flex flex-col gap-[16px]">
+                            <h4 class="font-syne text-[18px] font-semibold text-white leading-snug">
+                                SquareUp designed and developed a captivating web portal for showcasing our real estate listings.
+                            </h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                The platform is visually appealing and easy to navigate, allowing potential buyers to find their dream homes effortlessly. SquareUp's expertise in the real estate industry is unmatched.
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <!-- profile -->
-                                 <div>
-                                    <h6>Michael Anderson</h6>
-                                    <p>Founder of Dream Homes Realty.</p>
-                                 </div>
+                        <div class="flex items-center justify-between border border-[#262626] p-[14px] rounded-[6px] bg-[#242424]/20">
+                            <div class="flex items-center gap-[12px]">
+                                <img src="./assets/mikeand.jpg" alt="" class="h-[50px] w-[50px] rounded-md">
+                                <div>
+                                    <p class="text-[13px] font-medium text-white">Michael Anderson</p>
+                                    <p class="text-[12px] text-[#555555]">Founder of Dream Homes Realty.</p>
+                                </div>
                             </div>
-                            <button></button>
+                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                                Open Website
+                            </button>
                         </div>
                     </article>
-                    <article>
-                        <div>
-                            <h4>FitLife Tracker wanted a mobile app that tracked fitness activities and provided personalized workout plans.</h4>
-                            <p>SquareUp's team developed an intuitive and feature-rich app that has helped our users stay motivated and achieve their fitness goals. We highly recommend SquareUp for any health and fitness app development needs.</p>
+
+                    <article class="p-[40px] flex flex-col justify-between gap-[40px]">
+                        <div class="flex flex-col gap-[16px]">
+                            <h4 class="font-syne text-[18px] font-semibold text-white leading-snug">
+                                FitLife Tracker wanted a mobile app that tracked fitness activities and provided personalized workout plans.
+                            </h4>
+                            <p class="text-[13px] text-[#555555] leading-[1.7]">
+                                SquareUp's team developed an intuitive and feature-rich app that has helped our users stay motivated and achieve their fitness goals. We highly recommend SquareUp for any health and fitness app development needs.
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <!-- profile -->
-                                 <div>
-                                    <h6>Emily Turner</h6>
-                                    <p>CEO of FitLife Tracker</p>
-                                 </div>
+                        <div class="flex items-center justify-between border border-[#262626] p-[14px] rounded-[6px] bg-[#242424]/20">
+                            <div class="flex items-center gap-[12px]">
+                                <img src="./assets/emilyT.jpg" alt="" class="h-[50px] w-[50px] rounded-md">
+                                <div>
+                                    <p class="text-[13px] font-medium text-white">Emily Turner</p>
+                                    <p class="text-[12px] text-[#555555]">CEO of FitLife Tracker</p>
+                                </div>
                             </div>
-                            <button>Open Website</button>
+                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                                Open Website
+                            </button>
                         </div>
                     </article>
+
                 </div>
+                <hr class="border-none h-px bg-[#262626]" />
+
             </div>
         </section>
 
         <!-- FAQs -->
-        <section>
-            <div>
-                <h4>Frequently Asked Questions</h4>
-                <p>Still you have any questions? Contact our Team via hello@squareup.com</p>
+        <section class="w-[1280px] border border-[#262626] mx-auto">
+            <!-- Header -->
+            <div class="py-[60px] px-[40px] text-center">
+                <h4 class="font-syne text-[28px] font-bold text-white tracking-tight mb-[10px]">Frequently Asked Questions</h4>
+                <p class="text-[13px] text-[#555555]">Still you have any questions? Contact our Team via hello@squareup.com</p>
             </div>
-            <div>
-                <div>
-                    <hr>
-                    <article>
-                        <div></div>
-                        <div>
-                            <div>
-                                <h6>What services does SquareUp provide?</h6>
+
+            <!-- Grid -->
+            <div class="border-t border-[#262626] grid grid-cols-2">
+
+                <!-- Left Column -->
+                <div class="py-[40px] flex flex-col border-r border-[#262626]">
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 01 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#9EFF00] font-medium font-[barlow] tracking-wider pt-[2px] min-w-[24px]">01</span>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between gap-[12px]">
+                                <h6 class="text-[14px] font-medium text-[#b8f04a] leading-[1.5]">What services does SquareUp provide?</h6>
+                                <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                    <img src="./assets/xicon.svg" alt="">
+                                </div>
                             </div>
-                            <p>SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.</p>
+                            <p class="text-[13px] text-[#555555] leading-[1.7] mt-[12px]">SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.</p>
                         </div>
                     </article>
-                    <hr>
-                    <article>
-                        <div>
-                            <p>02</p>
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 02 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">02</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">How can SquareUp help my business?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
                         </div>
-                        <h6>How can SquareUp help my business?</h6>
                     </article>
-                    <hr>
-                    <article>
-                        <div><p>03</p></div>
-                        <h6>What industries does SquareUp work with?</h6>
-                    </article>
-                    <hr>
-                    <article>
-                        <div>
-                            <p>04</p>
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 03 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">03</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">What industries does SquareUp work with?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
                         </div>
-                        <h6>How long does it take to complete a project with SquareUp?</h6>
                     </article>
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 04 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">04</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">How long does it take to complete a project with SquareUp?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
-                <div>
-                    <article>
-                        <div>
-                            <p>05</p>
+
+                <!-- Right Column -->
+                <div class="py-[40px] flex flex-col">
+
+                    <!-- Item 05 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">05</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">Do you offer ongoing support and maintenance after the project is completed?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
                         </div>
-                        <h6>Do you offer ongoing support and maintenance after the project is completed?</h6>
                     </article>
-                    <article>
-                        <div>
-                            <p>06</p>
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 06 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">06</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">Can you work with existing design or development frameworks?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
                         </div>
-                        <h6>Can you work with existing design or development frameworks?</h6>
                     </article>
-                    <article>
-                        <div>
-                            <p>07</p>
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 07 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">07</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">How involved will I be in the project development process?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
                         </div>
-                        <h6>
-                            How involved will I be in the project development process?
-                        </h6>
                     </article>
-                    <article>
-                        <div>
-                            <P>08</P>
+
+                    <div class="h-px bg-[#262626] w-full"></div>
+
+                    <!-- Item 08 -->
+                    <article class="px-[40px] py-[28px] flex items-start gap-[20px] border-b border-[#262626]">
+                        <span class="text-[24px] text-[#FFFFFF] font-semibold font-[barlow] tracking-wider pt-[2px] min-w-[24px]">08</span>
+                        <div class="flex-1 flex items-start justify-between gap-[12px]">
+                            <h6 class="text-[14px] font-normal text-[#888888] leading-[1.5]">Can you help with website or app maintenance and updates?</h6>
+                            <div class="w-[20px] h-[20px] flex items-center justify-center flex-shrink-0 mt-[1px]">
+                                <img src="./assets/plusicon.svg" alt="">
+                            </div>
                         </div>
-                        <h6>Can you help with website or app maintenance and updates?</h6>
                     </article>
+
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section>
-            <div>
-                <div></div>
-                <div>
-                    <h4>Thank you for your Interest in SquareUp.</h4>
-                    <p>We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.</p>
+        <section class="w-[1280px] border border-[#262626] mx-auto">
+
+            <!-- Hero banner -->
+            <div class="relative flex flex-col items-center justify-center py-[60px] px-[40px] text-center bg-[url('/contact-bg.jpg')] bg-cover bg-center overflow-hidden">
+                <div class="absolute inset-0"></div>
+                <div class="relative z-10 flex flex-col items-center gap-[20px]">
+                    <div class="w-[52px] h-[52px] rounded-[12px] bg-[#b8f04a] flex items-center justify-center">
+                        <img src="./assets/Logo.svg" alt="">
+                    </div>
+                    <h4 class="font-syne text-[28px] font-bold text-white tracking-tight max-w-[500px] leading-snug">
+                        Thank you for your Interest in SquareUp.
+                    </h4>
+                    <p class="text-[13px] text-[#555555] leading-[1.7] max-w-[420px]">
+                        We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.
+                    </p>
+                    <button class="mt-[4px] px-[28px] py-[10px] bg-[#b8f04a] text-[#0f0f0f] text-[13px] font-semibold rounded-[6px] hover:bg-[#cff76a] transition-colors">
+                        Start Project
+                    </button>
                 </div>
-                <button>Start Project</button>
             </div>
-            <div>
-                <form action="" method="POST">
-                    <div>
-                        <div>
-                            <label for="Full Name"></label>
-                            <input type="text" name="fullName" placeholder="Type here">
-                            <hr>
+
+            <!-- Form area -->
+            <div class=" px-[120px] py-[60px]">
+                <form action="" method="POST" class="border border-[#262626] flex flex-col gap-[20px] p-[60px] max-w-[560px] mx-auto">
+
+                    <!-- Full Name + Email -->
+                    <div class="flex gap-[16px]">
+                        <div class="flex-1 flex flex-col gap-[8px] py-[16px] px-[20px] rounded-[6px] border border-[#262626]">
+                            <label class="text-[11px] text-[#555555] font-medium tracking-wide">Full Name</label>
+                            <input type="text" name="fullName" placeholder="Type here"
+                                class="bg-transparent text-[13px] text-white placeholder-[#3a3a3a] outline-none border-none w-full" />
+                            <hr class="border-none h-px bg-[#2e2e2e]" />
                         </div>
-                        <div>
-                            <label for="Email"></label>
-                            <input type="text" name="Email" placeholder="Type here">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="Contact Reason">Why are you contacting us?</label>
-                        <div>
-                            <div>
-                                <input type="checkbox" name="" id="" value="Web Design">
-                                <input type="checkbox" name="" id="" value="collaboration">
-                            </div>
-                            <div>
-                                <input type="checkbox" name="" id="" value="Mobile App Design">
-                                <input type="checkbox" name="" id="" value="others">
-                            </div>
+                        <div class="flex-1 flex flex-col gap-[8px] py-[16px] px-[20px] rounded-[6px] border border-[#262626] ">
+                            <label class="text-[11px]  font-medium tracking-wide">Email</label>
+                            <input type="email" name="email" placeholder="Type here"
+                                class="bg-transparent text-[13px] text-white placeholder-[#3a3a3a] outline-none border-none w-full" />
+                            <hr class="border-none h-px " />
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <label for="budget">Your budget</label>
-                            <p>Slide to indicate your budget range</p>
-                        </div>
-                        <div>
-                            <input type="range" name="budget" id="budget">
+
+                    <!-- Reason checkboxes -->
+                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[16px]">
+                        <label class="text-[13px] text-white font-medium">Why are you contacting us?</label>
+                        <div class="grid grid-cols-2 gap-[12px]">
+                            <label class="flex items-center gap-[10px] ">
+                                <input type="checkbox" name="reason" value="Web Design" checked
+                                    class="w-[16px] h-[16px] rounded-[4px] border  accent-[#b8f04a] " />
+                                <span class="text-[13px] text-[#888888]">Web Design</span>
+                            </label>
+                            <label class="flex items-center gap-[10px] ">
+                                <input type="checkbox" name="reason" value="Collaboration"
+                                    class="w-[16px] h-[16px] rounded-[4px] border " />
+                                <span class="text-[13px] text-[#888888]">Collaboration</span>
+                            </label>
+                            <label class="flex items-center gap-[10px] ">
+                                <input type="checkbox" name="reason" value="Mobile App Design"
+                                    class="w-[16px] h-[16px] rounded-[4px] border " />
+                                <span class="text-[13px] text-[#888888]">Mobile App Design</span>
+                            </label>
+                            <label class="flex items-center gap-[10px] ">
+                                <input type="checkbox" name="reason" value="Others"
+                                    class="w-[16px] h-[16px] rounded-[4px] border " />
+                                <span class="text-[13px] text-[#888888]">Others</span>
+                            </label>
                         </div>
                     </div>
-                    <div>
-                        <label for="Message">Your message</label>
-                        <div>
-                            <div>
-                                <input type="text" name="message" id="message" placeholder="Type here">
-                            </div>
-                            <hr>
+
+                    <!-- Budget slider -->
+                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[16px]">
+                        <div class="flex flex-col gap-[4px]">
+                            <label class="text-[13px] text-white font-medium">Your Budget</label>
+                            <p class="text-[11px] text-[#555555]">Slide to indicate your budget range</p>
+                        </div>
+                        <input type="range" name="budget" id="budget" min="1000" max="50000" value="1000"
+                            class="w-full accent-[#b8f04a] " />
+                        <div class="flex justify-between">
+                            <span class="text-[11px] text-[#555555]">$1000</span>
+                            <span class="text-[11px] text-[#555555]">$50,000</span>
                         </div>
                     </div>
+
+                    <!-- Message -->
+                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[12px]">
+                        <label class="text-[13px] text-white font-medium">Your Message</label>
+                        <textarea name="message" placeholder="Type here" rows="4"
+                            class="bg-transparent text-[13px] text-white placeholder-[#3a3a3a] outline-none border-none resize-none w-full leading-[1.7]"></textarea>
+                        <hr class="border-none h-px bg-[#2e2e2e]" />
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="flex justify-center pt-[8px]">
+                        <button type="submit"
+                            class="px-[40px] py-[12px] bg-[#b8f04a] text-[#0f0f0f] text-[13px] font-bold rounded-[6px] tracking-wide hover:bg-[#cff76a] transition-colors uppercase">
+                            Submit
+                        </button>
+                    </div>
+
                 </form>
             </div>
+
         </section>
 
         <!-- footer -->
         <footer class="w-full h-fit border border-t py-20 px-10 border-[#262626] gap-10">
-            <div class="h-fit justify-between flex">
-                <div>
-                    <h6>SquareUp</h6>
+            <div class="h-fit justify-between flex pb-7">
+                <div class="flex flex-row justify-center items-center gap-3">
+                    <img src="./assets/Logo.svg" alt="">
+                    <img src="./assets/SquareUp.svg" alt="">
                 </div>
-                <div class="w-fit h-fit gap-5">
+                <div class="w-fit h-fit gap-5 flex text-[#E6E6E6] font-[barlow] font-medium">
                     <button class="color-[#E6E6E6]">Home</button>
                     <button class="color-[#E6E6E6]">Services</button>
                     <button class="color-[#E6E6E6]">Work</button>
@@ -400,13 +668,11 @@
                     <button class="color-[#E6E6E6]">Careers</button>
                     <button class="color-[#E6E6E6]">Contact</button>
                 </div>
-                <div>
-                    <h5>Stay Connected</h5>
-                    <div>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                    </div>
+                <div class="flex radius-[8px] border border-[#262626] gap-[20px] py-2.5 pl-5 pr-2.5 rounded-[8px]">
+                    <h5 class="font-[barlow] text-[#E6E6E6] font-medium text-[16px] leading-[1.5]"> Stay Connected</h5>
+                    <a href=""><img src="./assets/facebook.svg" alt=""></a>
+                    <a href=""><img src="./assets/twitter.svg" alt=""></a>
+                    <a href=""><img src="./assets/linkedin.svg" alt=""></a>
                 </div>
             </div>
             <hr>
