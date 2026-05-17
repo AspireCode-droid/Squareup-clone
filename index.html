@@ -225,7 +225,7 @@
                             <span class="w-[40px] h-[40px] flex items-center justify-center">
                                 <img src="./assets/collicon.svg" alt="">
                             </span>
-                            <h5 class="font-syne text-[17px] font-semibold text-white">Collaborative Partnership</h5>
+                            <h5 class="font-[barlow] text-[17px] font-semibold text-white">Collaborative Partnership</h5>
                         </div>
                         <p class="px-[60px] pb-[60px] text-[13px] text-[#E6E6E6] -leading-[0.6]">
                             We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive.
@@ -281,7 +281,7 @@
                                     <p class="text-[12px] text-[#555555]">CEO of Chic Boutique</p>
                                 </div>
                             </div>
-                            <button class="px-[16px] py-[8px] text-[12px] text-[#888888] border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
+                            <button class="px-[16px] py-[8px] text-[12px] text-white border border-[#2e2e2e] rounded-[6px] hover:border-[#444444] hover:text-white transition-colors bg-transparent">
                                 Open Website
                             </button>
                         </div>
@@ -549,93 +549,142 @@
         </section>
 
         <!-- Contact -->
-        <section class="w-[1280px] border border-[#262626] mx-auto">
+        <section class="w-[1280px] border-x border-t border-[#262626] mx-auto">
 
             <!-- Hero banner -->
-            <div class="relative flex flex-col items-center justify-center py-[60px] px-[40px] text-center bg-[url('/contact-bg.jpg')] bg-cover bg-center overflow-hidden">
-                <div class="absolute inset-0"></div>
-                <div class="relative z-10 flex flex-col items-center gap-[20px]">
-                    <div class="w-[52px] h-[52px] rounded-[12px] bg-[#b8f04a] flex items-center justify-center">
+            <div class="relative flex flex-col items-center justify-center py-[60px] px-[40px] border-b border-[#262626] text-center bg-[url(/assets/contactImg.png)] bg-cover bg-center overflow-hidden -z-10">
+                <div class="absolute inset-0 bg-[#ACFF2433]/20 w-full h-full z-40"></div>
+                <div class="relative z-10 flex flex-col items-center gap-[20px] min-h-[48px] w-[780px]">
+                    <div class="w-[52px] h-[52px] rounded-[12px] bg-[#9EFF00] flex items-center justify-center">
                         <img src="./assets/Logo.svg" alt="">
                     </div>
-                    <h4 class="font-syne text-[28px] font-bold text-white tracking-tight max-w-[500px] leading-snug">
+                    <h4 class="font-[barlow] font-semibold text-[30px] font-bold text-white">
                         Thank you for your Interest in SquareUp.
                     </h4>
-                    <p class="text-[13px] text-[#555555] leading-[1.7] max-w-[420px]">
+                    <p class="text-[16px] text-[#E6E6E6] leading-[1.5] -tracking-[-0.6%] w-full h-full">
                         We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us.
                     </p>
-                    <button class="mt-[4px] px-[28px] py-[10px] bg-[#b8f04a] text-[#0f0f0f] text-[13px] font-semibold rounded-[6px] hover:bg-[#cff76a] transition-colors">
+                    <button class="mt-[4px] px-[28px] py-[10px] bg-[#9EFF00] text-[#1A1A1A] text-[14px] font-[barlow] font-medium rounded-[6px]">
                         Start Project
                     </button>
                 </div>
             </div>
 
             <!-- Form area -->
-            <div class=" px-[120px] py-[60px]">
-                <form action="" method="POST" class="border border-[#262626] flex flex-col gap-[20px] p-[60px] max-w-[560px] mx-auto">
+            <div class=" px-[217px] flex gap-2.5 ">
+                <form action="" method="POST" class="border border-[#262626] flex flex-col gap-[30px] p-[60px] mx-auto">
 
                     <!-- Full Name + Email -->
-                    <div class="flex gap-[16px]">
-                        <div class="flex-1 flex flex-col gap-[8px] py-[16px] px-[20px] rounded-[6px] border border-[#262626]">
-                            <label class="text-[11px] text-[#555555] font-medium tracking-wide">Full Name</label>
+                    <div class="flex gap-[30px]">
+                        <div class="flex-1 flex flex-col gap-[8px] py-[16px] px-[20px] rounded-[6px] border border-[#262626] bg-[#242424]/50">
+                            <label class="text-[18px] text-white font-medium tracking-wide font-[barlow]">Full Name</label>
                             <input type="text" name="fullName" placeholder="Type here"
                                 class="bg-transparent text-[13px] text-white placeholder-[#3a3a3a] outline-none border-none w-full" />
-                            <hr class="border-none h-px bg-[#2e2e2e]" />
+                            <hr class="border-none h-px bg-[#333333]" />
                         </div>
-                        <div class="flex-1 flex flex-col gap-[8px] py-[16px] px-[20px] rounded-[6px] border border-[#262626] ">
-                            <label class="text-[11px]  font-medium tracking-wide">Email</label>
+                        <div class="flex-1 flex flex-col gap-[8px] py-[16px] px-[20px] rounded-[6px] border border-[#262626] bg-[#242424]/50">
+                            <label class="text-[18px]  font-medium tracking-wide text-[#FFFFFF] font-[barlow]">Email</label>
                             <input type="email" name="email" placeholder="Type here"
                                 class="bg-transparent text-[13px] text-white placeholder-[#3a3a3a] outline-none border-none w-full" />
-                            <hr class="border-none h-px " />
+                            <hr class="border-none h-px bg-[#333333]" />
                         </div>
                     </div>
 
                     <!-- Reason checkboxes -->
-                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[16px]">
-                        <label class="text-[13px] text-white font-medium">Why are you contacting us?</label>
-                        <div class="grid grid-cols-2 gap-[12px]">
+                    <div class="rounded-[8px] p-[30px] border border-[#262626] flex flex-col gap-[30px] bg-[#242424]/50">
+                        <label class="text-[18px] text-white font-medium font-[barlow] leading-[1.5]">Why are you contacting us?</label>
+                        <div class="grid grid-cols-2 gap-[24px]">
                             <label class="flex items-center gap-[10px] ">
                                 <input type="checkbox" name="reason" value="Web Design" checked
-                                    class="w-[16px] h-[16px] rounded-[4px] border  accent-[#b8f04a] " />
-                                <span class="text-[13px] text-[#888888]">Web Design</span>
+                                    class="w-[16px] h-[16px] rounded-[4px] border  accent-[#262626]" />
+                                <p class="text-[16px] text-white">Web Design</p>
                             </label>
                             <label class="flex items-center gap-[10px] ">
                                 <input type="checkbox" name="reason" value="Collaboration"
-                                    class="w-[16px] h-[16px] rounded-[4px] border " />
-                                <span class="text-[13px] text-[#888888]">Collaboration</span>
+                                    class="w-[16px] h-[16px] rounded-[4px] border accent-[#262626]" />
+                                <p class="text-[16px] text-white">Collaboration</p>
                             </label>
                             <label class="flex items-center gap-[10px] ">
                                 <input type="checkbox" name="reason" value="Mobile App Design"
-                                    class="w-[16px] h-[16px] rounded-[4px] border " />
-                                <span class="text-[13px] text-[#888888]">Mobile App Design</span>
+                                    class="w-[16px] h-[16px] rounded-[4px] border accent-[#262626]  " />
+                                <p class="text-[16px] text-white">Mobile App Design</p>
                             </label>
                             <label class="flex items-center gap-[10px] ">
                                 <input type="checkbox" name="reason" value="Others"
-                                    class="w-[16px] h-[16px] rounded-[4px] border " />
-                                <span class="text-[13px] text-[#888888]">Others</span>
+                                    class="w-[16px] h-[16px] rounded-[4px] border accent-[#262626] bg-[#262626]" />
+                                <p class="text-[16px] text-white">Others</p>
                             </label>
                         </div>
                     </div>
 
                     <!-- Budget slider -->
-                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[16px]">
-                        <div class="flex flex-col gap-[4px]">
-                            <label class="text-[13px] text-white font-medium">Your Budget</label>
-                            <p class="text-[11px] text-[#555555]">Slide to indicate your budget range</p>
+                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[30px] bg-[#242424]/50">
+                        <div class="flex flex-col gap-[14px]">
+                            <label class="text-[18px] leading-[1.5] text-white font-medium font-[barlow]">Your Budget</label>
+                            <p class="text-[16px] text-[#E6E6E6] leading-[1.5] tracking-[-0.6%]">Slide to indicate your budget range</p>
                         </div>
-                        <input type="range" name="budget" id="budget" min="1000" max="50000" value="1000"
-                            class="w-full accent-[#b8f04a] " />
-                        <div class="flex justify-between">
-                            <span class="text-[11px] text-[#555555]">$1000</span>
-                            <span class="text-[11px] text-[#555555]">$50,000</span>
+                        <div class="relative w-[660px] h-[40px]">
+
+                            <!-- Track -->
+                            <div class="absolute top-1/2 left-0 w-full h-[2px] bg-[#2A2A2A] -translate-y-1/2 rounded-full"></div>
+
+                            <!-- Active Range -->
+                            <div
+                                class="absolute top-1/2 h-[2px] bg-[#CAFF33] -translate-y-1/2 rounded-full"
+                                style="left: 10%; right: 40%;"
+                            ></div>
+
+                            <!-- Min Range -->
+                            <input
+                                type="range"
+                                min="1000"
+                                max="50000"
+                                value="5000"
+                                class="absolute top-[30%] w-full appearance-none bg-transparent 
+
+                                [&::-webkit-slider-thumb]:appearance-none
+                                [&::-webkit-slider-thumb]:pointer-events-auto
+                                [&::-webkit-slider-thumb]:w-[16px]
+                                [&::-webkit-slider-thumb]:h-[16px]
+                                [&::-webkit-slider-thumb]:rounded-full
+                                [&::-webkit-slider-thumb]:bg-[#CAFF33]
+                                [&::-webkit-slider-thumb]:border-[3px]
+                                [&::-webkit-slider-thumb]:border-[#1A1A1A]
+                                [&::-webkit-slider-thumb]:cursor-pointer"
+                            />
+
+                            <!-- Max Range -->
+                            <input
+                                type="range"
+                                min="1000"
+                                max="50000"
+                                value="30000"
+                                class="absolute top-[30%] w-full appearance-none bg-transparent
+
+                                [&::-webkit-slider-thumb]:appearance-none
+                                [&::-webkit-slider-thumb]:pointer-events-auto
+                                [&::-webkit-slider-thumb]:w-[16px]
+                                [&::-webkit-slider-thumb]:h-[16px]
+                                [&::-webkit-slider-thumb]:rounded-full
+                                [&::-webkit-slider-thumb]:bg-[#CAFF33]
+                                [&::-webkit-slider-thumb]:border-[3px]
+                                [&::-webkit-slider-thumb]:border-[#1A1A1A]
+                                [&::-webkit-slider-thumb]:cursor-pointer"
+                            />
+
                         </div>
+                        <div class="flex relative -mt-6 m-6">
+                            <span class="text-[13px] text-white font-[inter] text-[14px] font-medium left-[3%]  absolute ">$1000</span>
+                            <span class="text-[13px] text-white font-[inter] text-[14px] font-medium right-[37%] absolute">$50000</span>
+                        </div>
+
                     </div>
 
                     <!-- Message -->
-                    <div class="rounded-[8px] p-[24px] border border-[#262626] flex flex-col gap-[12px]">
-                        <label class="text-[13px] text-white font-medium">Your Message</label>
-                        <textarea name="message" placeholder="Type here" rows="4"
-                            class="bg-transparent text-[13px] text-white placeholder-[#3a3a3a] outline-none border-none resize-none w-full leading-[1.7]"></textarea>
+                    <div class="rounded-[8px] p-[24px] border border-[#262626] h-fit flex flex-col gap-[20px] bg-[#242424]/50">
+                        <label class="text-[18px] leading-[1.5] text-white font-medium font-[barlow]">Your Message</label>
+                        <textarea name="message" placeholder="Type here" rows="1"
+                            class="bg-transparent text-[13px] h-fit text-white placeholder-[#656567] outline-none border-b-2 pb-4 border-[#262626] resize-none w-full leading-[1.7]"></textarea>
                         <hr class="border-none h-px bg-[#2e2e2e]" />
                     </div>
 
@@ -649,7 +698,6 @@
 
                 </form>
             </div>
-
         </section>
 
         <!-- footer -->
